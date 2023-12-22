@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a[20],i,n,ev=0,od=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2==0)
+        {
+            ev++;
+        }
+        else
+        {
+            od++;
+        }
+    }
+    printf("no of even numbers: %d\n",ev);
+    printf("no of odd numbers:%d",od);
+}
