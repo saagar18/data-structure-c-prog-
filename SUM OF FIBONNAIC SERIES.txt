@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+ {
+  int n;
+  int sum = 0;  
+  printf("Enter the number of terms: ");
+  scanf("%d", &n);
+
+  int a = 0, b = 1, c;
+for (int i = 0; i < n; ++i)
+ {
+    sum += a;  
+    c = a + b;
+    a = b;
+    b = c;
+  }
+printf("The sum of the first %d Fibonacci numbers is: %lld\n", n, sum);
+}
